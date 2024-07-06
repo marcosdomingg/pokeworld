@@ -12,13 +12,13 @@
       <p class="text-thirdcolor text-sm">Marcos Domínguez - 20221093</p>
       <div class="text-center">
         <h1 class="text-8xl text-main">POKEWORLD</h1>
-        <p class="text-2xl text-secondary">Create every pokemon that you want</p>
+        <p class="text-2xl text-secondary">Crea el Pokémon de tu imaginación</p>
       </div>
 
      
       <a href="/form.php" class="text-white bg-main flex items-center justify-between py-2 px-3 rounded-md w-72" >
           <object data="/public/assets/pokeball.svg" type="image/svg+xml"></object>
-          Go to make your pokémon
+          Pulsa y crea tu pokémon
       </a>
  
 
