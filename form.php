@@ -9,7 +9,17 @@
 
 </head>
 <body class="bg-white font-main">
-    <div class="w-full h-screen flex flex-col justify-center items-center">
+    <div class="w-full h-screen flex flex-col justify-center items-center -mt-5">
+    <div class="flex w-full justify-center gap-2 my-5">
+                  <a href="/index.php" class="flex w-32 justify-evenly text-xs p-2  rounded-lg text-white items-center bg-black ">
+                 <object data="/public/assets/pokeball.svg" type="image/svg+xml" class="w-4"></object>
+                     Ir al inicio
+                 </a>
+                 <a href="/form.php" class="flex w-52 justify-evenly text-xs p-2 rounded-lg text-white items-center bg-main ">
+                     <object data="/public/assets/pokeball.svg" type="image/svg+xml" class="w-4"></object>
+                     Agregar otro pokemon
+                 </a>
+                 </div>
         <h1 class="text-7xl font-semibold text-main mb-6">POKEFORM</h1>
         <form action="/create.php" method="post" enctype="multipart/form-data" class="w-96 h-2/4 flex flex-col items-center">
 

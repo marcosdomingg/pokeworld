@@ -78,13 +78,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokeworld - Edit Pokémon</title>
+    <title>Pokeworld</title>
     <link rel="stylesheet" href="/css/output.css">
     <link rel="shortcut icon" href="/public/assets/favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-white font-main">
     <div class="w-full h-screen flex flex-col justify-center items-center">
-        <h1 class="text-7xl font-semibold text-main mb-6">EDIT POKÉMON</h1>
+        <h1 class="text-7xl font-semibold text-main mb-6">POKEDIT</h1>
         <?php if ($update_success): ?>
             <div class="bg-green-200 text-green-800 py-2 px-4 mb-4 rounded-md">
                 ¡Pokémon updated successfully!
@@ -111,10 +111,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="number" name="level" id="level" class="py-3 px-2 border border-thirdcolor rounded-md" placeholder="Insert the level of your Pokémon" value="<?php echo htmlspecialchars($nivel); ?>" required>
             </div>
 
-            <button type="submit" class="text-white bg-main flex items-center justify-between py-2 px-3 rounded-md w-64 mt-6">
-                <object data="/public/assets/pokeball.svg" type="image/svg+xml"></object>
-                Save changes
+            <div class="flex justify-evenly w-full">
+             <button type="submit" class="text-white text-xs bg-main flex items-center justify-evenly p-2 rounded-md w-48 mt-6">
+            <object data="/public/assets/pokeball.svg" type="image/svg+xml"></object>
+               Guardar cambios
             </button>
+            <a href="/read.php" class="text-white text-xs bg-thirdcolor flex items-center justify-evenly p-2 rounded-md w-40 mt-6">
+                Descartar cambios
+            </a>
+        </div>
         </form>
     </div>
 </body>

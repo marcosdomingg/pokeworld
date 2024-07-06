@@ -62,20 +62,20 @@ $conn->close();
     
         <h1 class="text-main text-8xl mb-7">Pokeboard</h1>
             <table class="w-3/5 min-w-96 items-center flex flex-col max-h-80 h-full justify-center  ">
-                <thead class="bg-main flex w-4/6 h-16 ">
-                    <tr class="flex justify-center w-full items-center text-white"> 
+                <thead class="bg-main flex w-5/6 h-16 ">
+                    <tr class="flex justify-evenly w-full items-center text-white"> 
                         <th class="max-w-16 w-full flex items-center justify-center">ID</th>
-                        <th class="max-w-20 w-full flex items-center justify-center">Name</th>
+                        <th class="max-w-20 w-full flex items-center justify-center">Nombre</th>
                         <th class="max-w-20 w-full flex items-center justify-center">Color</th>
-                        <th class="max-w-20 w-full flex items-center justify-center">Type</th>
-                        <th class="max-w-20 w-full flex items-center justify-center">Level</th>
-                        <th class="max-w-20 w-full flex items-center justify-center">Edit</th>
-                        <th class="max-w-20 w-full flex items-center justify-center">Delete</th>
+                        <th class="max-w-20 w-full flex items-center justify-center">Tipo</th>
+                        <th class="max-w-20 w-full flex items-center justify-center">Nivel</th>
+                        <th class="max-w-20 w-full flex items-center justify-center">Editar</th>
+                        <th class="max-w-20 w-full flex items-center justify-center">Eliminar</th>
                     </tr> 
                 </thead>
-                <tbody class="bg-main flex flex-col w-4/6 h-full mt-2 p-3 overflow-y-scroll">
+                <tbody class="bg-main flex flex-col w-5/6 h-full mt-2 p-3 overflow-y-scroll">
                     <?php foreach ($pokemon_rows as $row): ?>
-                        <tr class="flex justify-center w-full mt-3 text-white">
+                        <tr class="flex justify-evenly w-full mt-3 text-white">
                             <td class="max-w-16 w-full  flex items-center justify-center text-sm"><?php echo htmlspecialchars($row['id']); ?></td>
                             <td class="max-w-20 w-full  flex items-center justify-center text-sm"><?php echo htmlspecialchars($row['nombre']); ?></td>
                             <td class="max-w-20 w-full  flex items-center justify-center text-sm"><?php echo htmlspecialchars($row['color']); ?></td>

@@ -7,8 +7,16 @@
     <title>Pokeworld</title>
     <link rel="shortcut icon" href="/public/assets/favicon.ico" type="image/x-icon">
   </head>
+
+  
   <body class="bg-white h-screen font-main flex justify-center items-center">
+
+    
     <main class="flex flex-col justify-evenly w-full h-3/5 items-center  ">
+      <a href="/read.php" class="text-white bg-black flex items-center justify-evenly py-2 px-3 rounded-md w-40" >
+          <object data="/public/assets/pokeball.svg" type="image/svg+xml"></object>
+          Pokeboard  
+      </a>
       <p class="text-thirdcolor text-sm">Marcos Domínguez - 20221093</p>
       <div class="text-center">
         <h1 class="text-8xl text-main">POKEWORLD</h1>
