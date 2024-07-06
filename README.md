@@ -8,4 +8,4 @@ Materia - Programación Web
 
 # CONFIG PROYECTO:
 
-Lo primero es gi
+Lo primero es clonar el repositorio
